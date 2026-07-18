@@ -1,0 +1,40 @@
+.formatstyle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  margin: 40px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e8ed;
+}
+
+.formatstyle h1 {
+  color: #1a365d;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #3182ce;
+  padding-bottom: 12px;
+}
+
+.detailstyle p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #2d3748;
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #edf2f7;
+  padding-bottom: 8px;
+}
+
+.detailstyle p b {
+  color: #4a5568;
+}
+
+.detailstyle p span {
+  font-weight: 600;
+  color: #2b6cb0;
+}
