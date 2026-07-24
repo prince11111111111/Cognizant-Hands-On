@@ -10,15 +10,16 @@ import com.cognizant.springlearn.Country;
 public class CountryService {
 
     public Country getCountry(String code) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
-        @SuppressWarnings("unchecked")
-        List<Country> countries = (List<Country>) context.getBean("countryList");
-        
-        for (Country country : countries) {
-            if (country.getCode().equalsIgnoreCase(code)) {
-                return country;
+        try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("country.xml")) {
+            @SuppressWarnings("unchecked")
+            List<Country> countries = (List<Country>) context.getBean("countryList");
+            
+            for (Country country : countries) {
+                if (country.getCode().equalsIgnoreCase(code)) {
+                    return country;
+                }
             }
+            return null;
         }
-        return null;
     }
 }

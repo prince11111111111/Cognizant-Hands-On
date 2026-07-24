@@ -1,0 +1,4 @@
+<greeting>
+    <message>Hello from Master Trunk Branch</message>
+    <message>Hello from GitWork Feature Branch</message>
+</greeting>
